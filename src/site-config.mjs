@@ -4,7 +4,7 @@ export const site = {
   name: 'ReDraw',
   locales: ['en', 'zh'],
   supportEmail: 'sinofolks@gmail.com',
-  operator: '',
+  operator: 'mafei',
   effectiveDate: '',
   // A test build never creates public download or checkout links.
   distribution: { status: 'test', releaseVersion: '' },
