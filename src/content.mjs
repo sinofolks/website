@@ -1,0 +1,356 @@
+// Public product copy. Operational/legal details belong in the site's build configuration.
+// Keep the two locales in the same shape so the page renderer can remain shared.
+export const content = {
+  en: {
+    locale: "en",
+    language: "English",
+    meta: {
+      title: "ReDraw — Sketch an idea. Make it clear.",
+      description: "A native Mac canvas for sketches, diagrams, and connected thinking. Draw, save, and export for free, with an optional one-time MCP + Library license.",
+    },
+    nav: { features: "The canvas", pricing: "Pricing", support: "Support", privacy: "Privacy", language: "中文" },
+    hero: {
+      eyebrow: "A native canvas for Mac",
+      headline: "Sketch an idea. Make it clear.",
+      subhead: "Give a rough thought a shape, connect the pieces, and see where it goes. ReDraw is a little space for sketches, workflows, and diagrams on your Mac.",
+      primaryCta: "Explore the canvas",
+      primaryHref: "#features",
+      status: "Direct download in preparation",
+      compatibility: "macOS 14 or later",
+      detail: "Free drawing, saving, and PNG/PDF export.",
+    },
+    features: {
+      eyebrow: "From a thought to a drawing",
+      title: "Enough structure to get somewhere. Enough freedom to explore.",
+      intro: "Start with a scribble or a few connected shapes. Keep refining as your thinking changes.",
+      items: [
+        {
+          id: "canvas",
+          eyebrow: "Think on the canvas",
+          title: "Loose lines. Clear connections.",
+          body: "Mix freehand strokes, shapes, text, and images. Join ideas with connected arrows, group related pieces, and make the picture your own.",
+          detail: "Keyboard shortcuts, trackpad panning, and pinch to zoom keep the work moving.",
+        },
+        {
+          id: "library",
+          eyebrow: "A place to start",
+          title: "Borrow a little structure.",
+          body: "Browse templates for flowcharts, mind maps, project planning, and more. Add reusable elements, emoji, and icons when the drawing needs a little extra context.",
+          detail: "Browsing and previews are free. Inserting bundled Library content requires the MCP + Library license.",
+        },
+        {
+          id: "mcp",
+          eyebrow: "Bring your own AI client",
+          title: "Let a conversation take shape.",
+          body: "MCP connects a compatible AI client to your active canvas through ReDraw’s local MCP server. The client can read the drawing and make supported, editable changes.",
+          detail: "You choose and configure the client. AI subscriptions, model usage, and credits are separate. Connected clients may send canvas content to their AI provider.",
+        },
+        {
+          id: "files",
+          eyebrow: "Keep it. Share it. Rework it.",
+          title: "A drawing you can come back to.",
+          body: "Save an editable .rd document, or share the canvas or a selection as PNG or PDF. Choose a light or dark export to suit its destination.",
+          detail: "Documents live on your Mac or in a location you choose. No ReDraw account is required.",
+        },
+      ],
+    },
+    pricing: {
+      eyebrow: "Simple choices",
+      title: "Start free. Add what fits.",
+      intro: "One purchase unlocks MCP and the bundled Library. No ReDraw subscription.",
+      note: "Planned direct-download price: US$9.99, plus applicable taxes. The final total is shown at checkout. Public downloads and purchases are not open yet.",
+      plans: [
+        {
+          id: "free",
+          name: "The canvas",
+          price: "Free",
+          period: "Your everyday drawing tools",
+          description: "Room to think, draw, and share.",
+          features: ["Draw and edit shapes, text, and images", "Open and save editable documents", "Export PNG and PDF", "Browse and preview the Library"],
+        },
+        {
+          id: "lifetime",
+          name: "MCP + Library Lifetime",
+          price: "$9.99",
+          period: "USD · One-time purchase · Plus applicable taxes",
+          description: "More ways to start. More ways to build.",
+          features: ["Insert bundled templates, elements, emoji, and icons", "Enable the local MCP server", "Read and edit the canvas with a compatible AI client", "One license unlocks both features on up to 3 Macs"],
+        },
+      ],
+      finePrint: "The license covers MCP and the bundled Library collection. AI subscriptions, model usage, and credits are not included. Future separately sold packs are not promised.",
+    },
+    faq: {
+      title: "A few things to know",
+      items: [
+        { question: "Can I download ReDraw now?", answer: "ReDraw is preparing a signed, Apple-notarized Mac download from this website. A public installer is not available yet. The free canvas will not require a purchase." },
+        { question: "What can I do for free?", answer: "Draw, edit, open and save documents, and export PNG or PDF. You can also browse and preview the Library. Optional purchases unlock inserting Library content and enabling MCP." },
+        { question: "Are MCP and Library separate purchases?", answer: "No. The direct-download edition uses one US$9.99 lifetime license for both MCP and the bundled Library, plus applicable taxes. The license supports up to 3 Macs. The core canvas remains free." },
+        { question: "Does MCP include an AI model?", answer: "No. MCP connects a compatible client that you choose and configure. The client’s subscription, model usage, and credits are separate from ReDraw." },
+        { question: "Where are my drawings stored?", answer: "On your Mac or in the location you choose when saving. ReDraw does not provide its own cloud document service. If that location is synchronized by iCloud Drive or another service, that provider handles the synchronization." },
+        { question: "Can I keep editing Library artwork?", answer: "Yes. Artwork already on your canvas remains editable and exportable even if Library access changes. The unlock is required for inserting additional bundled Library content." },
+      ],
+    },
+    support: {
+      title: "A little help with ReDraw",
+      intro: "Start with the answers below. For a problem that needs a closer look, a few details make it easier to help.",
+      contactTitle: "Get in touch",
+      contactDescription: "Send the steps that led to the issue, what you expected, and what happened instead. Remove private content from any screenshots or files you share.",
+      contactCta: "Email support",
+      reportTitle: "Useful details to include",
+      reportChecklist: ["ReDraw version and build", "Your macOS version", "Steps to reproduce the problem", "A screenshot, if it helps, with private content removed"],
+      safetyNote: "Never send passwords, payment details, your full license key, or your MCP access token.",
+      faq: [
+        { question: "How do I save an editable drawing?", answer: "Choose File → Save to create a .rd document. ReDraw can open compatible .excalidraw and .json files; saving an import prompts for a new .rd document. Keep the editable source alongside your exports." },
+        { question: "Can I recover interrupted work?", answer: "Try File → Recover Auto-Save. Recovery copies are separate from your saved document and are not a replacement for regular saves or backups." },
+        { question: "How will I activate the direct-download edition?", answer: "The direct-download edition uses a license key for MCP and Library. After a completed purchase, open ReDraw → License…, paste the key from your order, and choose Activate license. Use Refresh license to recheck access, or Deactivate this Mac before moving an activation. Keep the key private. Public purchases are not open yet." },
+        { question: "How many Macs can I activate?", answer: "One license supports up to 3 Macs at a time. On a Mac you no longer use, open ReDraw → License… and choose Deactivate this Mac while connected to the internet. If that Mac is unavailable, email support with your order reference and the installation ID when available; do not send your full license key." },
+        { question: "Can I use paid features offline?", answer: "Activate online first. After a successful license validation, MCP and Library can work offline for up to 30 days. Reconnect and choose Refresh license before that period ends. A revoked or deactivated license, or verification that requires an online check, does not receive offline access. Drawing, saving, and export stay free." },
+        { question: "What if an activation result could not be confirmed?", answer: "If ReDraw asks you to retry after reconnecting, use Activate license again. If it shows an interrupted activation instead, email sinofolks@gmail.com with the installation ID shown in ReDraw and your order reference, not your full key. Support can identify its activation ID. In License…, choose Recover activation…, paste the ID supplied by support, and choose Release activation. Once release succeeds, enter your license key and activate again. If support cannot find an activation ID, Retry activation… offers a manual retry: read the warning and choose Retry activation to send the securely saved key once more. A retry may occupy an extra activation slot if the first request succeeded; the 3-Mac limit still applies. It never unlocks features without a successful license check. Do not guess activation IDs or repeatedly retry." },
+        { question: "Will my TestFlight purchase transfer?", answer: "TestFlight uses Apple’s test purchase environment. Those test entitlements are not paid licenses for the direct-download edition. Keep your .rd documents; drawing, saving, and export remain free." },
+        { question: "How do I connect an MCP client?", answer: "With MCP unlocked, open MCP Server… and enable the server. When it shows Running, use Copy Codex Configuration and add the configuration to the compatible client’s local settings. Keep ReDraw open. The server starts off each time you launch the app." },
+        { question: "How do I stop an MCP connection?", answer: "Turn off Enable MCP Server, close the active canvas, or quit ReDraw. Closing only the MCP settings panel does not stop the server. A connected client can read and edit the active canvas and may send content to its provider; turning off access does not remove copies already held by that provider." },
+        { question: "Where are the keyboard shortcuts?", answer: "Open Help → Keyboard Shortcuts in ReDraw for the current reference." },
+      ],
+      links: [],
+    },
+    privacy: {
+      title: "Privacy in ReDraw",
+      intro: "How the current macOS app handles drawings, optional connections, and purchases.",
+      scope: "This overview describes the ReDraw macOS application. Services you choose to connect or use to store files have their own privacy practices.",
+      operatorLabel: "Operator",
+      effectiveDateLabel: "Effective date",
+      contactLabel: "Privacy contact",
+      sections: [
+        {
+          id: "documents",
+          title: "Your drawings and files",
+          paragraphs: [
+            "ReDraw edits drawings on your Mac. Documents, imported images, exports, preferences, and recovery copies are stored locally or in a location you choose. The app does not require a ReDraw account and does not provide a developer-operated cloud document service in this version.",
+            "If you save in a folder synchronized by iCloud Drive or another service, that service handles synchronization under its own terms and privacy policy.",
+            "Recovery copies can contain your drawing, unfinished text, and the original file path. A successful explicit save clears that document session’s recovery history. Other recovery copies may remain until removed. Deleting an original document does not necessarily remove exports, recovery copies, backups, or copies held by a storage provider.",
+          ],
+        },
+        {
+          id: "mcp",
+          title: "Optional connections to AI clients",
+          paragraphs: [
+            "MCP is off when ReDraw starts. After unlocking MCP, you can enable a local server and give its connection configuration to a compatible client on the same Mac. The connection uses a local address and an access token. ReDraw stores the token locally and copies it to the clipboard when you use the configuration-copy action.",
+            "An authenticated client can read the active canvas, including text and element information, request preview images, and make supported edits. ReDraw does not ask for confirmation on every request while access is enabled. Turn off Enable MCP Server, close the active canvas, or quit ReDraw to stop access.",
+            "The client may send canvas content or preview images to its AI provider or other services, which may retain that information. A local connection does not mean information can never leave your Mac. Review the client’s and provider’s practices before connecting. ReDraw does not operate the AI model service. Removing access does not delete copies already held by a client or provider.",
+          ],
+        },
+        {
+          id: "purchases",
+          title: "Direct purchases and licenses",
+          paragraphs: [
+            "The direct-download edition is being prepared to use Dodo Payments for checkout and license management. When you choose to buy, your browser opens Dodo’s hosted checkout. Dodo processes purchase, billing, and payment information under its own policies. ReDraw does not collect card details in the application.",
+            "The license key and activation identifier are stored in the macOS Keychain. To activate, validate, or deactivate access, the app sends the license key and relevant activation information to Dodo’s license service over HTTPS. These requests also expose connection information such as your IP address to the service. Canvas documents are not part of license requests.",
+            "Current development uses Dodo’s test environment. Test keys do not unlock a production license. Public checkout will remain unavailable until the production purchase and activation flow has been verified.",
+          ],
+        },
+        {
+          id: "support",
+          title: "Email support",
+          paragraphs: ["If you email sinofolks@gmail.com, we receive your email address, message, and any attachments you send to investigate and respond to your request. The mailbox uses Gmail, which processes email under Google’s privacy policy. Share only the information needed for support; do not send your full license key, payment card details, or MCP access token."],
+        },
+        {
+          id: "diagnostics",
+          title: "Local diagnostics",
+          paragraphs: [
+            "The current app does not include an advertising network or a custom remote analytics service. It may write local operating-system diagnostic logs for purchase loading and errors.",
+            "Developer-enabled performance diagnostics can write a local file with timings, memory statistics, process information, and a scene name. ReDraw does not automatically upload these files. Apple may process App Store or diagnostic information according to your Apple settings and its own policies.",
+          ],
+        },
+        {
+          id: "choices",
+          title: "Your choices",
+          paragraphs: [
+            "You control your saved documents and exports. You can disable MCP and remove its configuration from a connected client. Information held by Dodo Payments, Apple, cloud storage providers, or AI clients is managed through their services.",
+            "Links you choose to open from a drawing are handled by your browser or other default application. The destination’s privacy policy applies. Before sharing a screenshot or diagnostic file for support, remove confidential drawing content and credentials.",
+          ],
+        },
+      ],
+      links: [{ label: "Apple Privacy Policy", href: "https://www.apple.com/legal/privacy/" }],
+    },
+    footer: { line: "A little space for a clearer idea.", release: "Preparing a direct Mac download.", home: "Back to ReDraw" },
+  },
+  zh: {
+    locale: "zh",
+    language: "简体中文",
+    meta: {
+      title: "ReDraw — 画下想法，理清思路。",
+      description: "为 Mac 打造的原生画板，用草图和连线图整理想法。绘制、保存与导出免费，可按需一次性解锁 Library 和 MCP。",
+    },
+    nav: { features: "画板", pricing: "价格", support: "支持", privacy: "隐私", language: "English" },
+    hero: {
+      eyebrow: "为 Mac 打造的原生画板",
+      headline: "画下想法，理清思路。",
+      subhead: "给一个模糊的想法画出轮廓，把相关的部分连起来，再看看它会走向哪里。用 ReDraw 画草图、梳理流程，把脑中的关系放到画布上。",
+      primaryCta: "看看画板能做什么",
+      primaryHref: "#features",
+      status: "正在准备官网直接下载",
+      compatibility: "需要 macOS 14 或更高版本",
+      detail: "绘制、保存及 PNG/PDF 导出免费。",
+    },
+    features: {
+      eyebrow: "让想法慢慢成形",
+      title: "有结构可循，也有自由发挥的空间。",
+      intro: "从随手几笔，或几个相连的图形开始。思路变了，图也可以跟着改。",
+      items: [
+        {
+          id: "canvas",
+          eyebrow: "在画布上思考",
+          title: "随手画下，顺着连起来。",
+          body: "把手绘线条、图形、文字和图片放在一起。用连线表达关系，把相关内容编成一组，再调整颜色和样式。",
+          detail: "用键盘快捷键、触控板平移和双指缩放，继续手头的思路。",
+        },
+        {
+          id: "library",
+          eyebrow: "给开始一点帮助",
+          title: "借一个结构，接着画。",
+          body: "浏览流程图、思维导图、项目规划等模板。需要补充表达时，再添一些可复用元素、emoji 和图标。",
+          detail: "浏览和预览免费；插入内置素材需要 MCP + Library 许可证。",
+        },
+        {
+          id: "mcp",
+          eyebrow: "连接你选择的 AI 客户端",
+          title: "让对话在画布上成形。",
+          body: "MCP 开启 ReDraw 的本地 MCP 服务，让兼容的 AI 客户端读取当前画布，并进行受支持、可继续编辑的修改。",
+          detail: "客户端由你选择和配置。AI 订阅、模型用量与积分另计；连接的客户端可能将画布内容发送给其 AI 服务商。",
+        },
+        {
+          id: "files",
+          eyebrow: "保存、分享，也继续修改",
+          title: "这张图，下次还能接着画。",
+          body: "保存为可编辑的 .rd 文档，或将整张画布、选中内容导出为 PNG 或 PDF。分享时，可以选择适合场景的浅色或深色外观。",
+          detail: "文档保存在你的 Mac 或自行选择的位置，无需 ReDraw 账号。",
+        },
+      ],
+    },
+    pricing: {
+      eyebrow: "按自己的需要选择",
+      title: "免费开始，按需解锁。",
+      intro: "一次购买解锁 MCP 与内置 Library，无需 ReDraw 订阅。",
+      note: "官网版计划售价为 9.99 美元，适用税额另计，最终金额以结账页为准。目前尚未开放公开下载与购买。",
+      plans: [
+        {
+          id: "free",
+          name: "基础画板",
+          price: "免费",
+          period: "日常绘图所需的工具",
+          description: "把想法画出来，保存下来，分享出去。",
+          features: ["绘制与编辑图形、文字和图片", "打开与保存可编辑文档", "导出 PNG 和 PDF", "浏览与预览 Library"],
+        },
+        {
+          id: "lifetime",
+          name: "MCP + Library Lifetime",
+          price: "$9.99",
+          period: "美元 · 一次性买断 · 适用税额另计",
+          description: "从模板开始，用 AI 继续构建。",
+          features: ["插入内置模板、元素、emoji 和图标", "开启本地 MCP 服务", "通过兼容 AI 客户端读写画布", "同一份许可证解锁两项功能，最多激活 3 台 Mac"],
+        },
+      ],
+      finePrint: "许可证包含 MCP 与随应用提供的内置 Library。不包含 AI 订阅、模型用量或积分，也不承诺包含未来单独销售的素材包。",
+    },
+    faq: {
+      title: "你可能想知道",
+      items: [
+        { question: "现在可以下载 ReDraw 吗？", answer: "ReDraw 正在准备经签名并通过 Apple 公证的官网 Mac 安装包，暂未开放公开下载。基础画板无需购买。" },
+        { question: "免费版本可以做什么？", answer: "可以绘制、编辑、打开和保存文档，以及导出 PNG 或 PDF，也可以浏览和预览 Library。插入 Library 素材与开启 MCP 服务属于可选的付费解锁功能。" },
+        { question: "MCP 与 Library 分别收费吗？", answer: "官网版使用同一份 9.99 美元买断许可证解锁 MCP 和内置 Library，适用税额另计。一份许可证最多激活 3 台 Mac，基础画板仍然免费。" },
+        { question: "MCP 包含 AI 模型吗？", answer: "不包含。MCP 用于连接你选择并配置的兼容客户端。客户端订阅、模型用量和积分与 ReDraw 分开。" },
+        { question: "图会保存在哪里？", answer: "保存在你的 Mac，或保存时选择的位置。ReDraw 不提供自己的云文档服务。如果选择了 iCloud Drive 或其他同步目录，同步由相应服务商处理。" },
+        { question: "Library 的内容以后还能编辑吗？", answer: "可以。已放入画布的内容仍可编辑和导出，即使 Library 权限发生变化。继续插入新的内置素材需要相应解锁权限。" },
+      ],
+    },
+    support: {
+      title: "ReDraw 使用帮助",
+      intro: "可以先从下面的常见问题找起。如果需要进一步排查，几个具体信息会很有帮助。",
+      contactTitle: "联系我们",
+      contactDescription: "请说明问题出现前的操作、你预期的结果，以及实际发生的情况。分享截图或文件前，请先移除私人内容。",
+      contactCta: "发送支持邮件",
+      reportTitle: "建议提供的信息",
+      reportChecklist: ["ReDraw 版本与构建号", "macOS 版本", "可以复现问题的步骤", "如有帮助，可附上已移除私人内容的截图"],
+      safetyNote: "请勿发送密码、付款资料、完整许可证密钥或 MCP 访问令牌。",
+      faq: [
+        { question: "如何保存为可以继续编辑的文档？", answer: "选择 File → Save，保存为 .rd 文档。ReDraw 可以打开兼容的 .excalidraw 和 .json 文件；保存导入内容时，会提示创建新的 .rd 文档。导出图片后，也请保留可编辑源文件。" },
+        { question: "工作中断后能找回内容吗？", answer: "可以尝试 File → Recover Auto-Save。恢复副本与正式保存的文档分开，不能替代定期保存和备份。" },
+        { question: "官网版如何激活？", answer: "官网版通过许可证密钥解锁 MCP 与 Library。完成购买后，打开 ReDraw → License…，输入订单中的密钥并选择 Activate license。Refresh license 用于重新验证权限；转移激活时可先选择 Deactivate this Mac。请妥善保管，不要公开分享。目前尚未开放公开购买。" },
+        { question: "一份许可证可以激活几台 Mac？", answer: "同一时间最多激活 3 台 Mac。在不再使用的 Mac 上联网打开 ReDraw → License…，选择 Deactivate this Mac。如果无法再使用该 Mac，可向支持邮箱提供订单编号及可获得的 installation ID，请勿发送完整许可证密钥。" },
+        { question: "付费功能可以离线使用吗？", answer: "首次激活需要联网。许可证成功验证后，MCP 与 Library 最多可离线使用 30 天；请在期限结束前联网并选择 Refresh license。已撤销、已取消激活或验证状态要求联网核验的许可证不提供离线权限。绘制、保存和导出始终免费。" },
+        { question: "提示无法确认激活结果怎么办？", answer: "如果应用提示重新联网后重试，请再次选择 Activate license。如果提示激活中断，请将应用显示的 installation ID 与订单编号发送至 sinofolks@gmail.com，不要发送完整密钥。支持人员查明 activation ID 后，在 License… 中选择 Recover activation…，粘贴该 ID 并选择 Release activation。释放成功后再输入许可证密钥激活。如果支持人员无法查到 activation ID，可选择 Retry activation…，阅读风险提示，再选择 Retry activation，使用安全保存的密钥发起一次人工重试。如果首次请求实际成功，重试可能额外占用激活名额，3 台 Mac 上限仍然适用；只有许可证验证成功才会解锁。请勿猜测 ID 或反复重试。" },
+        { question: "TestFlight 的购买会转移吗？", answer: "TestFlight 使用 Apple 的测试购买环境，其中的测试权益不等于官网版付费许可证。请保留 .rd 文档；绘制、保存与导出仍然免费。" },
+        { question: "如何连接 MCP 客户端？", answer: "解锁 MCP 后，打开 MCP Server… 并开启服务。显示 Running 后，使用 Copy Codex Configuration，将配置加入兼容客户端的本地设置。使用时需保持 ReDraw 开启；服务在每次启动应用时默认关闭。" },
+        { question: "如何停止 MCP 连接？", answer: "关闭 Enable MCP Server、关闭当前画布，或退出 ReDraw。只关闭 MCP 设置面板不会停止服务。连接的客户端可以读写当前画布，并可能向其服务商发送内容；停止访问不会删除服务商已持有的副本。" },
+        { question: "在哪里查看快捷键？", answer: "在 ReDraw 中打开 Help → Keyboard Shortcuts，查看当前快捷键列表。" },
+      ],
+      links: [],
+    },
+    privacy: {
+      title: "ReDraw 中的隐私",
+      intro: "了解当前 macOS 应用如何处理绘图、可选连接与购买信息。",
+      scope: "本说明介绍 ReDraw macOS 应用。你选择连接的服务或用于存储文件的服务有各自的隐私做法。",
+      operatorLabel: "运营主体",
+      effectiveDateLabel: "生效日期",
+      contactLabel: "隐私联系方式",
+      sections: [
+        {
+          id: "documents",
+          title: "绘图与文件",
+          paragraphs: [
+            "ReDraw 在你的 Mac 上编辑绘图。文档、导入图片、导出文件、偏好设置与恢复副本保存在本地或你自行选择的位置。当前版本无需 ReDraw 账号，也不提供由开发者运营的云文档服务。",
+            "如果将文件保存在 iCloud Drive 或其他同步目录，相应服务会按照自己的条款与隐私政策处理同步。",
+            "恢复副本可能包含绘图、尚未完成的文字和原始文件路径。成功手动保存后，应用会清除该文档会话的恢复历史；其他恢复副本可能保留至被移除。删除原始文档并不一定会删除导出文件、恢复副本、备份或存储服务商持有的副本。",
+          ],
+        },
+        {
+          id: "mcp",
+          title: "可选的 AI 客户端连接",
+          paragraphs: [
+            "ReDraw 启动时默认关闭 MCP。解锁 MCP 后，你可以开启本地服务，将连接配置交给同一台 Mac 上的兼容客户端。连接使用本地地址与访问令牌。ReDraw 在本地保存令牌，并在使用复制配置操作时将其复制到剪贴板。",
+            "通过认证的客户端可以读取当前画布，包括文字与元素信息，请求预览图，并进行受支持的编辑。访问开启期间，ReDraw 不会对每次请求重复确认。关闭 Enable MCP Server、关闭当前画布或退出 ReDraw，可以停止访问。",
+            "客户端可能将画布内容或预览图发送给其 AI 服务商或其他服务，这些服务可能保留相关信息。本地连接不意味着信息永远不会离开你的 Mac。连接前请了解客户端及其服务商的隐私做法。ReDraw 不运营 AI 模型服务；停止访问不会删除客户端或服务商已持有的副本。",
+          ],
+        },
+        {
+          id: "purchases",
+          title: "官网购买与许可证",
+          paragraphs: [
+            "官网版正准备使用 Dodo Payments 处理结账和许可证。你选择购买后，浏览器会打开 Dodo 托管的结账页面。Dodo 根据自身政策处理购买、账单及付款信息；ReDraw 应用不收集支付卡资料。",
+            "许可证密钥与激活标识保存在 macOS 钥匙串中。激活、验证或取消激活时，应用通过 HTTPS 向 Dodo 的许可证服务发送密钥及相关激活信息，该服务也会接收 IP 地址等连接信息。许可证请求不包含画布文档。",
+            "当前开发使用 Dodo 测试环境，测试密钥不能解锁正式许可证。在正式购买及激活流程验证完成之前，不会开放公开结账入口。",
+          ],
+        },
+        {
+          id: "support",
+          title: "邮件支持",
+          paragraphs: ["向 sinofolks@gmail.com 发送邮件时，我们会接收你的邮箱地址、邮件内容及主动提供的附件，用于排查和回复请求。该邮箱使用 Gmail，Google 根据自身隐私政策处理邮件。请仅提供排查所需信息，不要发送完整许可证密钥、支付卡资料或 MCP 访问令牌。"],
+        },
+        {
+          id: "diagnostics",
+          title: "本地诊断",
+          paragraphs: [
+            "当前应用没有内置广告网络或自建远程分析服务。应用可能为购买加载及错误写入本地操作系统诊断日志。",
+            "开发者启用的性能诊断可能向本地文件写入耗时、内存统计、进程信息及场景名称。ReDraw 不会自动上传这些文件。Apple 可能根据你的 Apple 设置及其政策处理 App Store 或诊断信息。",
+          ],
+        },
+        {
+          id: "choices",
+          title: "你的选择",
+          paragraphs: [
+            "你可以管理自己保存的文档与导出文件，也可以关闭 MCP 并从已连接客户端移除相关配置。Dodo Payments、Apple、云存储服务商或 AI 客户端持有的信息，需要通过相应服务管理。",
+            "从画布中主动打开的链接由浏览器或其他默认应用处理，目标站点适用自身的隐私政策。为寻求支持而分享截图或诊断文件前，请移除机密绘图内容及凭证。",
+          ],
+        },
+      ],
+      links: [{ label: "Apple 隐私政策", href: "https://www.apple.com/legal/privacy/" }],
+    },
+    footer: { line: "留一点空间，让想法清楚起来。", release: "正在准备官网 Mac 下载。", home: "返回 ReDraw" },
+  },
+};
+
+export function getContent(locale = "en") {
+  return content[locale] ?? content.en;
+}
+
+export default content;

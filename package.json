@@ -1,0 +1,22 @@
+{
+  "name": "redraw-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "npm run build && node scripts/validate.mjs && npm test",
+    "dev": "npm run build && wrangler dev --ip 127.0.0.1",
+    "deploy:dry-run": "npm run check && wrangler deploy --dry-run",
+    "deploy": "npm run check && wrangler deploy",
+    "test": "node --test tests/*.test.mjs",
+    "review:checkout": "node scripts/review-checkout.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "4.148.0",
+    "miniflare": "5.20261006.0-alpha"
+  }
+}

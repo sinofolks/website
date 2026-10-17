@@ -1,0 +1,66 @@
+ReDraw website asset provenance
+
+public/assets/redraw-icon.png
+Existing ReDraw app icon, reused without image editing. Source in this repository:
+Resources/Theme.xcassets/ReDrawAppIcon.appiconset. Brand asset supplied by the project.
+
+public/assets/mind-map.png
+Original bundled ReDraw mind-map template preview, reused without image editing.
+Source: Resources/LibraryThumbnails/template.mind-map-light.png.
+The image is identified as a Library template on the page, not an app screenshot.
+
+public/assets/fonts/Excalifont-Regular.woff2
+Existing project font. SIL Open Font License copied beside it as Excalifont-OFL.txt.
+
+public/assets/fonts/Manrope-Variable.ttf
+Google Fonts Manrope, downloaded from the official google/fonts repository:
+https://github.com/google/fonts/tree/main/ofl/manrope
+SIL Open Font License copied beside it as Manrope-OFL.txt.
+
+Inline SVG icons and live diagram edges
+Authored for this website as functional vector geometry. Demo is explicitly marked
+Website demo. No stock photography, AI-generated website images, legacy launch
+videos, tracking pixels, or third-party embeds are included.
+
+public/assets/redraw-library-mcp-v1.mp4
+35-second Library + MCP walkthrough. Video stream comes from
+marketing/redraw-demo-15s/advanced/renders/redraw-library-mcp-web.mp4;
+original AAC soundtrack comes from redraw-library-mcp-35s.mp4 in that folder.
+Remuxed without re-encoding into a 3,382,576-byte, fast-start MP4.
+Real ReDraw UI captures, edited demonstration, and original synthesized music.
+The external AI prompt is explicitly an example. No third-party AI chat UI is
+presented as built-in ReDraw functionality. This is the new advanced film;
+no assets or code from the older noncommercial onetake films are used.
+
+public/assets/redraw-library-mcp-v1.jpg
+Poster frame at 23.95 seconds from the advanced film, showing the actual native
+checkout diagram. Source: advanced/renders/redraw-library-mcp-poster.jpg.
+
+public/assets/redraw-library-mcp-v2.mp4
+Refreshed 35-second Library + MCP film. The Template Preview and MCP Server
+scenes now show the actual shared centered panels from the native app. The
+remaining demonstration and original soundtrack are retained. Source:
+marketing/redraw-demo-15s/advanced/renders/redraw-library-mcp-web-v2.mp4.
+Native captures were taken with CUA from a separate capture test app identity;
+no native pixels were reconstructed or AI-edited. Capture fixtures do not ship.
+HyperFrames renderer was updated from 0.8.140 to 0.8.143.
+
+public/assets/redraw-library-mcp-v2.jpg
+Poster from the updated advanced film, showing the checkout architecture.
+Source: advanced/renders/redraw-library-mcp-poster-v2.jpg.
+
+public/assets/redraw-library-mcp-v3.mp4
+Direct-distribution pricing refresh of the same centered-panel demonstration.
+Flow/outro now say free app, MCP + Library $9.99 one-time, AI services excluded.
+The real native captures, scene timing and original audio are unchanged.
+Source: marketing/redraw-demo-15s/advanced/renders/redraw-library-mcp-web-v3.mp4.
+35 seconds, 1920x1080, H.264 at 30 fps, AAC stereo, fast-start MP4.
+Size: 2,922,440 bytes.
+SHA-256: cb4980d20deeee0ea6b1bde68199f72ebc454d89b7affcb17ffe802498a34718
+The rendering agent verified full decode and exact decoded-audio parity with v2.
+
+public/assets/redraw-library-mcp-v3.jpg
+Source: advanced/renders/redraw-library-mcp-poster-v3.jpg.
+Size: 94,818 bytes.
+SHA-256: baa23f6ab4e7e913e3a76f3dbf9fee36517a71a5ff3f798457f0759a5eb886bf
+Both homepages now reference v3. Older v1/v2 files remain as historical assets.
