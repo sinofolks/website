@@ -45,12 +45,24 @@ print(json.dumps({'tag':root.tag, 'version':root.get('version'), 'items':[
 `], { input: xml, encoding: 'utf8' }));
 }
 
-test('checked-in unpublished configuration serves an honest empty XML feed', async () => {
+test('checked-in production configuration serves the approved release', async () => {
   const response = await request(feedPath, {}, releases, site);
   assert.equal(response.status, 200);
   const parsed = parseFeed(await response.text());
   assert.equal(parsed.tag, 'rss');
   assert.equal(parsed.version, '2.0');
+  const approved = releases.find(record => record.version === site.distribution.releaseVersion);
+  assert.ok(approved?.github.verified && approved.github.published);
+  assert.equal(parsed.items[0].version, approved.version);
+  assert.equal(parsed.items[0].build, approved.sparkle.build);
+  assert.equal(parsed.items[0].enclosure.length, String(approved.size));
+  assert.equal(parsed.items[0].enclosure['{http://www.andymatuschak.org/xml-namespaces/sparkle}edSignature'], approved.sparkle.edSignature);
+});
+
+test('unpublished configuration serves an honest empty XML feed', async () => {
+  const response = await request(feedPath, {}, [], { ...site, distribution: { status: 'test', releaseVersion: '' } });
+  assert.equal(response.status, 200);
+  const parsed = parseFeed(await response.text());
   assert.deepEqual(parsed.items, []);
 });
 

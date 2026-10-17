@@ -4,7 +4,7 @@
   "files": {
     ".gitignore": "f3ca4b1476f632daca301acc1d1f51c471f2b828f1a157f959eda616140e126a",
     "ASSETS.txt": "1a757403b11a0beb0788924bdb87fee822d9e9a30cbcd83eb104c0d756da9993",
-    "README.md": "006e17359bfaa8a16e56a2b93549af92b2aa131a51a0244aec46fc85670f84a2",
+    "README.md": "90707f24f54be42be8b09bbaf9648a2d55515442f1022c7cc234a5a64fea2b41",
     "RELEASING.md": "168b29a2e42b43f15d3f632fa7e0a9df41d1c79ee1eff9017d3020ae3227faca",
     "package-lock.json": "f579b00cfba92a1c9c75eb8a72f863df9b7af5daa50f331d7d60046d3d4655b5",
     "package.json": "1a966545344c2804443a6eefbeaccb4603a803f9b057583e6b1fa504f7971015",
@@ -22,21 +22,21 @@
     "public/assets/redraw-library-mcp-v3.mp4": "cb4980d20deeee0ea6b1bde68199f72ebc454d89b7affcb17ffe802498a34718",
     "public/site.js": "d5253e1b8503742ea96efee0b6881e6bb109d69b4a7b736d9472aa668ccfffa9",
     "public/styles.css": "3959837ac872faf12a5c8ca9c72646bf81bf9db91d0f8e953187eb948cb3dcd6",
-    "scripts/build.mjs": "6350fba9262632ae6068b8e4ef610c7facb16d1da7ccda1de36c79285d76bfb8",
+    "scripts/build.mjs": "791ba80f0e927f8fe4eca4365f39774c55980d5fa45e93768bc11a19bdc93a4f",
     "scripts/review-checkout.mjs": "7595354e3d0d341f29f1ab799d723cb9b95bcacd40b3a0875c070e37e25303ff",
     "scripts/test_verify_github_release.py": "252ca2997a3b61b201022213ddc8ba4b575c3857ddcc4e2b9f46f9183afb1e2e",
     "scripts/validate.mjs": "b7d58221e3a8106eeb9143b7972a50274afde41ac57e6593accc2510c52b0a21",
     "scripts/verify_github_release.py": "a697d8b512b9e3e2c74d17db54ba6c59a021439d3b2bbf5d1436589b9c1a688a",
     "src/appcast.mjs": "819c5d3cbf32e9911e7acd8df87246838c8da2b2b1456a988577181720bc6e89",
-    "src/content.mjs": "fe0a058cf32e40061ac8f703b91d66214cf085465328985e68a85e35eadd6bff",
+    "src/content.mjs": "d0dfcae1cd56423990432026dac91bf25d2df25481c12d3e3d27d9865ad5d154",
     "src/distribution.mjs": "a60dafd07df54457c696bd462c9aee9f2ce2edd8c5f4ce51d3b1174feb613ee0",
-    "src/release-manifest.mjs": "4a7afafa4c5dc4b091d5ab16582801fb8ba27ebc8f5b36be234ac197dad3c613",
-    "src/site-config.mjs": "ecd6054a5ed1eaa7c1884c78df7f4e6efbf6c1e42e135bcf565a73d9a6893c23",
+    "src/release-manifest.mjs": "df5b007ef8f0ef1b7b9838530375ca5cd30f45f22eeb296a196d8af178bd05ee",
+    "src/site-config.mjs": "2fcedb4018f35bb532559bf9d91570da195bac4084e5a7d1c12572a4545b9db4",
     "src/worker.mjs": "98a518954b659bb9b93a216575cf330acf5b935f13a05251c29e2463396125c1",
-    "tests/appcast.test.mjs": "b7923ef63109c79fef8488d8f9ff0a8e2ee89b449d575df16698cccd4d1b5293",
-    "tests/auth-gateway.test.mjs": "338ac57c56a9f756ce55d99065308215783bf64898993305de40896a8c95849d",
+    "tests/appcast.test.mjs": "d3f4b71af3515e53a445a94b218405c09bb20aa90a1f34792e022eec86e61ac4",
+    "tests/auth-gateway.test.mjs": "777b75aa10d3577f082a67213f588d383361b4d5e144fbff6654790a72a45269",
     "tests/downloads.test.mjs": "0d6e71ef9fc73ebce654edd6faa64682245e552916fd0c1f597a2cdad6469bab",
     "tests/github-runtime.test.mjs": "564b4d59f446b28ceccdcf55bf85d2d6ab7a7819497855dfd0acddcee24238c2",
-    "wrangler.jsonc": "452c218d1d9943d168173bffcfdfc71af0fe404f4f09a5dec1c3d868a3d1f62d"
+    "wrangler.jsonc": "19db9bf9cbdd630544531415fb25b48e7de9e0e04f3260dcbf4b47771f968e53"
   }
 }

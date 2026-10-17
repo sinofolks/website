@@ -63,11 +63,13 @@ function home(locale) {
   const c=structuredClone(content[locale]);
   if (release) {
     c.hero.status=t(locale,`Direct download · ${release.version}`,`官网下载 · ${release.version}`);
-    c.footer.release=t(locale,'Download the free Mac app. Unlock MCP and Library when you need them.','免费下载 Mac 应用，按需解锁 MCP 与 Library。');
+    c.footer.release=checkoutURL
+      ?t(locale,'Download the free Mac app. Unlock MCP and Library when you need them.','免费下载 Mac 应用，按需解锁 MCP 与 Library。')
+      :t(locale,'Download the free Mac app for drawing, saving, and export. Public purchases are not open yet.','免费下载 Mac 应用，开始绘制、保存与导出。公开购买尚未开放。');
     c.faq.items[0].answer=t(locale,'Yes. Download the signed, Apple-notarized DMG below, open it, and drag ReDraw to Applications. The core canvas is free.','可以。下载下方经签名并通过 Apple 公证的 DMG，打开后将 ReDraw 拖入 Applications。基础画板免费。');
     c.pricing.note=checkoutURL
       ?t(locale,'US$9.99, plus applicable taxes. Dodo Payments shows the final total before purchase.','售价 9.99 美元，适用税额另计。Dodo Payments 将在购买前显示最终金额。')
-      :t(locale,'The free download is available. Paid licenses are still in testing; public purchases are not open yet. Planned price: US$9.99, plus applicable taxes.','免费安装包已可下载。许可证仍在测试，尚未开放公开购买；计划售价 9.99 美元，适用税额另计。');
+      :t(locale,'The free download is available. Public purchases are not open yet. Planned price: US$9.99, plus applicable taxes.','免费安装包已可下载。尚未开放公开购买；计划售价 9.99 美元，适用税额另计。');
   }
   const f=Object.fromEntries(c.features.items.map(i=>[i.id,i]));
   const headline=t(locale,'<span>Sketch an idea.</span><span class="handwritten">Make it clear.</span>','<span>画下一个想法。</span><span class="handwritten">让思路清楚起来。</span>');
@@ -77,19 +79,23 @@ function home(locale) {
 
 function privacy(locale) {
   const c=content[locale], p=structuredClone(c.privacy);
-  if (checkoutURL) {
+  if (release) {
     const purchase=p.sections.find(section=>section.id==='purchases');
-    purchase.paragraphs[0]=purchase.paragraphs[0].replace('is being prepared to use','uses').replace('正准备使用','使用');
-    purchase.paragraphs[2]=t(locale,'The public edition uses Dodo’s production service. Test license keys cannot activate the public edition.','公开版使用 Dodo 正式服务，测试许可证密钥不能激活公开版。');
+    purchase.paragraphs[0]=checkoutURL
+      ?purchase.paragraphs[0].replace('is being prepared to use','uses').replace('正准备使用','使用')
+      :t(locale,'The public Mac app uses Dodo Payments for license management. When public purchases become available, choosing to buy will open Dodo’s hosted checkout in your browser. Dodo processes purchase, billing, and payment information under its own policies. ReDraw does not collect card details in the application.','公开 Mac 版使用 Dodo Payments 管理许可证。公开购买开放后，选择购买将通过浏览器打开 Dodo 托管的结账页面。Dodo 根据自身政策处理购买、账单及付款信息；ReDraw 应用不收集支付卡资料。');
+    purchase.paragraphs[2]=t(locale,'The public edition uses Dodo’s production license service. Test license keys cannot activate the public edition.','公开版使用 Dodo 正式许可证服务，测试许可证密钥不能激活公开版。')
+      +(checkoutURL?'':t(locale,' Public purchases are not open yet; purchase and license-delivery verification is still pending.','目前尚未开放公开购买，购买及许可证交付流程仍待验证。'));
   }
   const title=policyReady?t(locale,'Privacy policy','隐私政策'):p.title;
   const websiteSection={id:'website',title:t(locale,'This website','本网站'),paragraphs:[t(locale,'This website is served by Cloudflare. When you visit, Cloudflare processes connection information such as IP addresses and request details to deliver and protect the site. This version does not include advertising, third-party analytics scripts, a contact form, or visitor accounts. The interactive diagram runs in your browser and does not send its content to a server.','本网站由 Cloudflare 提供服务。访问时，Cloudflare 会处理 IP 地址和请求详情等连接信息，以交付和保护网站。当前网站没有广告、第三方统计脚本、联系表单或访客账号。交互示例在浏览器中运行，不会将其内容发送给服务器。')]};
+  if (release) websiteSection.paragraphs.push(t(locale,'Installer downloads from this website and the app’s updater redirect to GitHub Releases. GitHub handles those download requests under its own privacy policy.','通过本网站或应用更新器获取安装包时，下载请求会跳转至 GitHub Releases，由 GitHub 按其隐私政策处理。'));
   const sections=[...p.sections,websiteSection];
-  const overview=t(locale,'This is a pre-release overview of the current app and website.','这是当前应用与网站在发布前的隐私概述。')
+  const overview=t(locale,'This overview describes how the current app and website handle information. It is not a finalized privacy policy.','本概述说明当前应用与网站如何处理信息，尚不是最终版隐私政策。')
     +(site.operator?t(locale,` ReDraw is operated by ${site.operator}.`,` ReDraw 的运营主体为 ${site.operator}。`):'')
-    +t(locale,' The public privacy contact is listed below. The effective date and final operating details still need to be confirmed before public release.','公开隐私联系方式列在下方。生效日期及最终运营细节仍需在公开发布前确认。');
+    +t(locale,' The public privacy contact is listed below. The effective date and final operating details are still being confirmed.','公开隐私联系方式列在下方。生效日期及最终运营细节仍在确认中。');
   const details=policyReady?`<dl class="facts-list"><dt>${e(p.operatorLabel)}</dt><dd>${e(site.operator)}</dd><dt>${e(p.effectiveDateLabel)}</dt><dd>${e(site.effectiveDate)}</dd><dt>${e(p.contactLabel)}</dt><dd><a href="mailto:${e(site.supportEmail)}">${e(site.supportEmail)}</a></dd></dl>`:`<div class="notice">${e(overview)}</div>`;
-  const html=`<div class="wrap"><header class="article-hero"><h1>${e(title)}</h1><p>${e(p.intro)}</p>${details}</header><div class="article-layout"><nav class="article-toc" aria-label="${t(locale,'On this page','本页目录')}"><ul>${sections.map(s=>`<li><a href="#${s.id}">${e(s.title)}</a></li>`).join('')}</ul></nav><div class="prose"><p>${e(p.scope)}</p>${sections.map(s=>`<section id="${s.id}"><h2>${e(s.title)}</h2>${paragraphs(s.paragraphs)}</section>`).join('')}<section><h2>${t(locale,'Related policies','相关政策')}</h2><p><a href="https://www.apple.com/legal/privacy/">${t(locale,'Apple privacy policy','Apple 隐私政策')}</a><br><a href="https://dodopayments.com/legal/privacy-policy">${t(locale,'Dodo Payments privacy policy','Dodo Payments 隐私政策')}</a><br><a href="https://policies.google.com/privacy">${t(locale,'Google privacy policy (support email)','Google 隐私政策（支持邮箱）')}</a><br><a href="https://www.cloudflare.com/privacypolicy/">${t(locale,'Cloudflare privacy policy','Cloudflare 隐私政策')}</a></p></section>${emailReady?`<section><h2>${e(p.contactLabel)}</h2><p><a href="mailto:${e(site.supportEmail)}">${e(site.supportEmail)}</a></p></section>`:''}</div></div></div>`;
+  const html=`<div class="wrap"><header class="article-hero"><h1>${e(title)}</h1><p>${e(p.intro)}</p>${details}</header><div class="article-layout"><nav class="article-toc" aria-label="${t(locale,'On this page','本页目录')}"><ul>${sections.map(s=>`<li><a href="#${s.id}">${e(s.title)}</a></li>`).join('')}</ul></nav><div class="prose"><p>${e(p.scope)}</p>${sections.map(s=>`<section id="${s.id}"><h2>${e(s.title)}</h2>${paragraphs(s.paragraphs)}</section>`).join('')}<section><h2>${t(locale,'Related policies','相关政策')}</h2><p><a href="https://www.apple.com/legal/privacy/">${t(locale,'Apple privacy policy','Apple 隐私政策')}</a><br><a href="https://dodopayments.com/legal/privacy-policy">${t(locale,'Dodo Payments privacy policy','Dodo Payments 隐私政策')}</a><br><a href="https://policies.google.com/privacy">${t(locale,'Google privacy policy (support email)','Google 隐私政策（支持邮箱）')}</a><br><a href="https://www.cloudflare.com/privacypolicy/">${t(locale,'Cloudflare privacy policy','Cloudflare 隐私政策')}</a>${release?`<br><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">${t(locale,'GitHub privacy statement (installer downloads)','GitHub 隐私声明（安装包下载）')}</a>`:''}</p></section>${emailReady?`<section><h2>${e(p.contactLabel)}</h2><p><a href="mailto:${e(site.supportEmail)}">${e(site.supportEmail)}</a></p></section>`:''}</div></div></div>`;
   return shell(locale,'privacy',html,`${title} — ReDraw`,p.intro);
 }
 
