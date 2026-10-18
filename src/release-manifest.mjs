@@ -6,6 +6,29 @@
 // See RELEASING.md for verification and publication steps.
 export const releases = [
   {
+    "version": "0.4.5",
+    "filename": "ReDraw-0.4.5-7-universal.dmg",
+    "github": {
+      "repository": "sinofolks/website",
+      "tag": "v0.4.5",
+      "assetID": 652244446,
+      "verified": true,
+      "published": true
+    },
+    "sha256": "98e97a636fca7d910559b1e74416153d7d3c352760865308ca0ff8bbc5a14b9f",
+    "size": 39979920,
+    "notarized": true,
+    "stapled": true,
+    "testDistribution": false,
+    "sparkle": {
+      "build": "7",
+      "minimumSystemVersion": "14.0.0",
+      "edSignature": "0JtBYXSIXcidbpIoXoOaCyW6WqCxBETxKaguftlJeFV5goPAPln5+2QYIVhpogr2k9YlQ1To8cmpYdF4SCbSAA==",
+      "publishedAt": "2026-10-18T02:28:33Z",
+      "releaseNotes": "Redeem a code in the License window to unlock MCP and Library permanently on up to three Macs.\n\nYour license key is delivered by email, and interrupted redemptions can be resumed safely without issuing a duplicate license. Existing license activation and purchases continue to work as before."
+    }
+  },
+  {
     "version": "0.4.4",
     "filename": "ReDraw-0.4.4-6-universal.dmg",
     "github": {
