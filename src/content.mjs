@@ -5,8 +5,8 @@ export const content = {
     locale: "en",
     language: "English",
     meta: {
-      title: "ReDraw — Sketch an idea. Make it clear.",
-      description: "A native Mac canvas for sketches, diagrams, and connected thinking. Draw, save, and export for free, with an optional one-time MCP + Library license.",
+      title: "ReDraw — Clear diagrams. Made on your Mac.",
+      description: "A native Mac canvas for sketches, LaTeX formulas, and Mermaid diagrams. Draw, save, and export for free. Optional MCP + Library license.",
     },
     nav: { features: "The canvas", pricing: "Pricing", support: "Support", privacy: "Privacy", language: "中文" },
     hero: {
@@ -178,7 +178,7 @@ export const content = {
     locale: "zh",
     language: "简体中文",
     meta: {
-      title: "ReDraw — 画下想法，理清思路。",
+      title: "ReDraw — 把思路画清楚。在你的 Mac 上。",
       description: "为 Mac 打造的原生画板，用草图和连线图整理想法。绘制、保存与导出免费，可按需一次性解锁 Library 和 MCP。",
     },
     nav: { features: "画板", pricing: "价格", support: "支持", privacy: "隐私", language: "English" },

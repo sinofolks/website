@@ -229,7 +229,55 @@ function setupDemo(document) {
   }
 }
 
+export function setupDemoPlayer(document) {
+  const dialog = document.querySelector("[data-demo-dialog]");
+  const video = dialog?.querySelector("video");
+  if (!dialog || !video || typeof dialog.showModal !== "function") return;
+
+  let opener = null;
+  const pause = () => video.pause();
+
+  for (const link of document.querySelectorAll("a[data-watch-demo]")) {
+    link.addEventListener("click", (event) => {
+      // Preserve new-tab clicks and the real MP4 link when a modal cannot open.
+      if (event.defaultPrevented || event.button !== 0 || event.altKey ||
+          event.ctrlKey || event.metaKey || event.shiftKey) return;
+      try {
+        if (!dialog.open) dialog.showModal();
+      } catch {
+        return;
+      }
+      event.preventDefault();
+      opener = link;
+      // Link clicks still bubble to setupMenu so mobile navigation closes.
+      try {
+        const playback = video.play();
+        if (playback && typeof playback.then === "function") {
+          playback.then(() => {
+            if (!dialog.open) pause();
+          }).catch(() => {});
+        }
+      } catch {
+        // Native controls remain available when autoplay is unavailable.
+      }
+    });
+  }
+
+  dialog.querySelector("[data-demo-close]")?.addEventListener("click", () => {
+    pause();
+    dialog.close();
+  });
+  dialog.addEventListener("cancel", pause);
+  dialog.addEventListener("close", () => {
+    if (dialog.open) return;
+    pause();
+    if (opener?.isConnected) opener.focus({ preventScroll: true });
+    opener = null;
+  });
+}
+
 if (typeof document !== "undefined") {
   setupMenu(document);
   setupDemo(document);
+  setupDemoPlayer(document);
 }

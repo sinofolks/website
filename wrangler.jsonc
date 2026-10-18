@@ -50,5 +50,11 @@
       "enabled": false
     },
     "redact_query_string": true
-  }
+  },
+  "services": [
+    {
+      "binding": "REDRAW_API",
+      "service": "redraw-api"
+    }
+  ]
 }

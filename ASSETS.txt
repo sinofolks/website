@@ -19,8 +19,8 @@ SIL Open Font License copied beside it as Manrope-OFL.txt.
 
 Inline SVG icons and live diagram edges
 Authored for this website as functional vector geometry. Demo is explicitly marked
-Website demo. No stock photography, AI-generated website images, legacy launch
-videos, tracking pixels, or third-party embeds are included.
+Website demo. The original interactive diagram is no longer presented on the homepage.
+No stock photography, tracking pixels, or third-party embeds are included.
 
 public/assets/redraw-library-mcp-v1.mp4
 35-second Library + MCP walkthrough. Video stream comes from
@@ -64,3 +64,30 @@ Source: advanced/renders/redraw-library-mcp-poster-v3.jpg.
 Size: 94,818 bytes.
 SHA-256: baa23f6ab4e7e913e3a76f3dbf9fee36517a71a5ff3f798457f0759a5eb886bf
 Both homepages now reference v3. Older v1/v2 files remain as historical assets.
+
+2026-10-18 Amber Cinema homepage refresh (approved option 1)
+
+public/assets/amber-cinema-bg.webp
+Original decorative amber fabric background generated with OpenAI Image Gen for
+this project, guided by the approved design. No text, logos, app UI, or product
+claims are embedded. 1295x1214, 39,082 bytes. It is decorative only.
+
+public/assets/redraw-canvas.webp
+Real ReDraw app capture: marketing/redraw-demo-15s/advanced/assets/native/06-checkout-expanded.png.
+2880x1800, 415,204 bytes. Converted with cwebp -lossless -exact.
+
+public/assets/redraw-mermaid.webp
+Real native Mermaid editor capture: .build/design-qa/code-insert/implemented/mermaid-shapes-final.png.
+2560x1640, 259,942 bytes. Converted with cwebp -lossless -exact.
+
+public/assets/redraw-latex.webp
+Real native LaTeX editor capture: .build/design-qa/code-insert/implemented/latex-final.png.
+2560x1640, 240,522 bytes. Converted with cwebp -lossless -exact.
+Both editor captures precede the later toolbar relocation; the depicted editor
+functionality is real. Source pixels were not reconstructed, retouched, or cropped.
+All three screenshot conversions have zero absolute pixel differences from source.
+
+public/assets/icons/{play-circle,arrow-right,download-simple,check,x}.svg
+Official Phosphor regular icons, used unchanged. MIT license in
+public/assets/icons/Phosphor-LICENSE.txt. Source pinned to commit:
+https://github.com/phosphor-icons/core/tree/2b75f3ad12b420c9504ef05df8d2564a28f8500e

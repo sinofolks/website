@@ -31,13 +31,13 @@ test('gateway failure is a noncacheable 503 without internal details', async () 
 test('prefix boundaries and discovery routing do not capture unrelated site pages', () => {
   for (const path of ['/redraw/authors', '/redraw/accounting', '/redraw/downloads/a.dmg', '/.well-known/other', '/.well-known/oauth-authorization-server/other']) assert.equal(isDynamicRoute(path), false);
 });
-test('Wrangler preserves scoped dynamic routing without an undeployed private API binding', async () => {
+test('Wrangler preserves scoped routing and the deployed production redemption gateway', async () => {
   const config = JSON.parse(await readFile(new URL('../wrangler.jsonc', import.meta.url), 'utf8'));
   for (const root of ['/redraw/sign-in', '/redraw/account', '/redraw/auth', '/redraw/api', '/redraw/webhooks']) {
     assert.ok(config.assets.run_worker_first.includes(root));
     assert.ok(config.assets.run_worker_first.includes(`${root}/*`));
   }
-  assert.equal(config.services, undefined);
+  assert.deepEqual(config.services, [{ binding: 'REDRAW_API', service: 'redraw-api' }]);
   assert.deepEqual(config.routes, [
     { pattern: 'www.sinofolks.com/redraw/*', zone_name: 'sinofolks.com' },
     { pattern: 'www.sinofolks.com/.well-known/oauth-authorization-server/redraw/auth', zone_name: 'sinofolks.com' },
