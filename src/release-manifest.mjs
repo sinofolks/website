@@ -6,6 +6,29 @@
 // See RELEASING.md for verification and publication steps.
 export const releases = [
   {
+    "version": "0.4.6",
+    "filename": "ReDraw-0.4.6-8-universal.dmg",
+    "github": {
+      "repository": "sinofolks/website",
+      "tag": "v0.4.6",
+      "assetID": 655035973,
+      "verified": true,
+      "published": true
+    },
+    "sha256": "04ba0f53a1187af325e50d4ab043eeccaea23fbe39d4d2f871cdca6680b925d4",
+    "size": 40314666,
+    "notarized": true,
+    "stapled": true,
+    "testDistribution": false,
+    "sparkle": {
+      "build": "8",
+      "minimumSystemVersion": "14.0.0",
+      "edSignature": "5oqAypsHPqG1FrsciKZUqifDQNlZhgxX0/f0yXJXk78dnyYGKdZcDvfIgjg1aVT0SJ7yI1oFa2X1TAY7pF8BAw==",
+      "publishedAt": "2026-10-19T02:06:34Z",
+      "releaseNotes": "ReDraw 0.4.6\n\nPanels, popovers, and collapsible sections now open and close with consistent, responsive animations. Motion follows the macOS Reduce Motion preference.\n\nRefined dropdown controls share a consistent design across the app while preserving native macOS menus, keyboard navigation, and accessibility. Compact property controls keep their circular shape.\n\nImproved light and dark appearance across glass panels, and refined the Export layout for smaller windows. Rapid panel switching preserves focus and editing state.\n\nRequires macOS 14 or later. Includes Apple Silicon and Intel binaries."
+    }
+  },
+  {
     "version": "0.4.5",
     "filename": "ReDraw-0.4.5-7-universal.dmg",
     "github": {
