@@ -6,6 +6,29 @@
 // See RELEASING.md for verification and publication steps.
 export const releases = [
   {
+    "version": "0.4.7",
+    "filename": "ReDraw-0.4.7-9-universal.dmg",
+    "github": {
+      "repository": "sinofolks/website",
+      "tag": "v0.4.7",
+      "assetID": 657956609,
+      "verified": true,
+      "published": true
+    },
+    "sha256": "c2f9d612f98cbf70eeccafec289cf268a6b54dbd52dfeba1134c6569deffa245",
+    "size": 40395289,
+    "notarized": true,
+    "stapled": true,
+    "testDistribution": false,
+    "sparkle": {
+      "build": "9",
+      "minimumSystemVersion": "14.0.0",
+      "edSignature": "9CD7rSilE3w6vYAF8Xu8CAVnxjfnBIp+jXv9wS5DC2vQd5fWm/ImM5B8RHNbFKXu0663tkiQm4anUylP34aOCw==",
+      "publishedAt": "2026-10-20T01:37:00Z",
+      "releaseNotes": "ReDraw 0.4.7\n\nSecurity improvements for license redemption and recovery. Verify your email with a short-lived code before redeeming a license or requesting a license email. Interrupted verification can resume securely.\n\nA compact native license window guides you through email verification, code redemption, and license recovery.\n\nOlder versions must upgrade to continue redeeming codes. Existing activated licenses remain available.\n\nRequires macOS 14 or later. Includes Apple Silicon and Intel binaries."
+    }
+  },
+  {
     "version": "0.4.6",
     "filename": "ReDraw-0.4.6-8-universal.dmg",
     "github": {
