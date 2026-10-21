@@ -23,7 +23,7 @@ Open the local URL printed by Wrangler at `/redraw/`. Generated output goes to `
 - Approved `/redraw/downloads/FILENAME` requests redirect to the corresponding published asset in `sinofolks/website`.
 - `src/release-manifest.mjs` is an explicit allowlist of verified production installers. Unknown paths, unverified assets, and test builds are not advertised.
 
-The manifest includes the verified, notarized ReDraw 0.4.4 (6) installer. Free downloads and Sparkle update metadata are enabled; public license purchases remain closed until merchant verification and live purchase acceptance are complete. Publishing website source alone does not deploy it. See [RELEASING.md](RELEASING.md) for the release process.
+The manifest lists verified, notarized production installers. Free downloads and Sparkle update metadata are enabled; public license purchases remain closed until merchant verification and live purchase acceptance are complete. Publishing website source alone does not deploy it. See [RELEASING.md](RELEASING.md) for the release process.
 
 ## Deployment
 

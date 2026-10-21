@@ -7,7 +7,7 @@ export const site = {
   operator: 'mafei',
   effectiveDate: '',
   // A test build never creates public download or checkout links.
-  distribution: { status: 'ready', releaseVersion: '0.4.7' },
+  distribution: { status: 'ready', releaseVersion: '0.4.8' },
   checkout: { environment: 'test', productId: '', url: '', verified: false },
   // Set only after the operator, support channel, and operating practices are confirmed.
   privacyPolicyReady: false,

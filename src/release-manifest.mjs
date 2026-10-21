@@ -6,6 +6,29 @@
 // See RELEASING.md for verification and publication steps.
 export const releases = [
   {
+    "version": "0.4.8",
+    "filename": "ReDraw-0.4.8-10-universal.dmg",
+    "github": {
+      "repository": "sinofolks/website",
+      "tag": "v0.4.8",
+      "assetID": 661210615,
+      "verified": true,
+      "published": true
+    },
+    "sha256": "5e48fac22df6bc152109ad8c6cc60fe643d049e68c9ac4021415c4644197fd13",
+    "size": 40823906,
+    "notarized": true,
+    "stapled": true,
+    "testDistribution": false,
+    "sparkle": {
+      "build": "10",
+      "minimumSystemVersion": "14.0.0",
+      "edSignature": "ktyrFdmD09utDGYVrk6MkA/X7jFu+rZMKkVGPBtIR5NctWSglVi0dCFxIO+reh4iyTVFY8BHz/+2J2RKrkiVAA==",
+      "publishedAt": "2026-10-21T03:13:04Z",
+      "releaseNotes": "ReDraw 0.4.8\n\nBring workflow diagrams to life with animated node states and directional flow. Preview, scrub, and loop the animation, then export an MP4 video or animated GIF.\n\nOrganize sequential and parallel steps with collapsible groups and pinned tracks. Zoom and pan the timeline, snap clips to nearby times, and drag or resize clips with clear handles. Hold Option to temporarily turn snapping off.\n\nA simpler timing editor explains when each step starts and how long it runs. Review changes before applying them, link steps to other modules' starts or finishes, and keep animation settings with your document.\n\nThe Documents window keeps its three-column layout with clearer selection, stable filenames, and easier access to save and sync details. Disconnected cloud folders now reliably offer Reconnect.\n\nA dedicated license status screen brings help, refresh, and deactivation together. Activation forms are more compact, and deactivating this Mac asks for confirmation.\n\nRequires macOS 14 or later. Includes Apple Silicon and Intel binaries."
+    }
+  },
+  {
     "version": "0.4.7",
     "filename": "ReDraw-0.4.7-9-universal.dmg",
     "github": {
