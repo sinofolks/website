@@ -6,6 +6,29 @@
 // See RELEASING.md for verification and publication steps.
 export const releases = [
   {
+    "version": "0.4.9",
+    "filename": "ReDraw-0.4.9-11-universal.dmg",
+    "github": {
+      "repository": "sinofolks/website",
+      "tag": "v0.4.9",
+      "assetID": 665305300,
+      "verified": true,
+      "published": true
+    },
+    "sha256": "10986697662a3fc43de023eba4c25405b5a0a1b0bc2886f4b66bae6c229d032b",
+    "size": 41034337,
+    "notarized": true,
+    "stapled": true,
+    "testDistribution": false,
+    "sparkle": {
+      "build": "11",
+      "minimumSystemVersion": "14.0.0",
+      "edSignature": "bODH3Gg6TCvpzNIk6qFNu65XikHCq5iMkGoMdZNNxz9DoXzcjFEbQzRwX6lvSwVVcNNJQFAGUi+pBMPhPl+3Dg==",
+      "publishedAt": "2026-10-22T09:17:00Z",
+      "releaseNotes": "ReDraw 0.4.9\n\nAnimate opens directly into a live preview. Show all branches together, follow connected arrows, or choose an explicit order. Adjust playback speed, loop the animation, and reveal the grouped timeline when you need precise timing.\n\nDirectional flow uses short ink-like strokes and subtle marker emphasis that preserve the drawing's handwriting, hatching, colors, and editable shapes. Timeline clips inherit authored group colors, while the canvas has more room in larger windows.\n\nDocuments with recorded camera moves now play and export those moves through the same native renderer as the live flow. Pan or zoom to take control of the preview, use Fit canvas for an overview, and Return to start to resume the recorded camera. Camera keyframe editing is not included in this release.\n\nMP4 and animated GIF export preserve playback speed and drawing style. Existing animations, timing dependencies, snapping, and undo remain available.\n\nRequires macOS 14 or later. Includes Apple Silicon and Intel binaries."
+    }
+  },
+  {
     "version": "0.4.8",
     "filename": "ReDraw-0.4.8-10-universal.dmg",
     "github": {
