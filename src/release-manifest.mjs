@@ -6,6 +6,29 @@
 // See RELEASING.md for verification and publication steps.
 export const releases = [
   {
+    "version": "0.4.10",
+    "filename": "ReDraw-0.4.10-12-universal.dmg",
+    "github": {
+      "repository": "sinofolks/website",
+      "tag": "v0.4.10",
+      "assetID": 665511783,
+      "verified": true,
+      "published": true
+    },
+    "sha256": "6923d688481fa20270dd123db1c172bab47e5077734aa8ef1bbe0580eab77143",
+    "size": 41051409,
+    "notarized": true,
+    "stapled": true,
+    "testDistribution": false,
+    "sparkle": {
+      "build": "12",
+      "minimumSystemVersion": "14.0.0",
+      "edSignature": "QYO6Vhc0rS0EoFPdriGXBR8nFJYOovKF2pigK3Wx2jVSLpDi8uQQI51QVXY90L0yAPozZ32gNNeWIHyuzxxQBA==",
+      "publishedAt": "2026-10-22T10:30:05Z",
+      "releaseNotes": "ReDraw 0.4.10\n\nAnimate brings gentle breathing highlights to active nodes and continuous, separated ink strokes to their connectors. Strokes follow the original route and color while text, shapes and arrowheads stay fixed. Short steps remain clear, and Reduce Motion uses steady node emphasis.\n\nNative preview and MP4/GIF export share the motion treatment and consistent saved camera framing. Original artwork, legacy state-change animations and authored timing are preserved. No camera-keyframe editor is added.\n\nAnimate preview, playback, timing edits and MP4/GIF export now share the MCP + Library lifetime license. Already activated licenses include all three automatically; existing license keys remain valid. The price remains US$9.99 once, plus applicable taxes, for up to 3 Macs.\n\nBasic drawing, saving, static PNG/PDF export, personal My Library, and bundled Library browsing stay free. Existing canvas artwork remains editable when paid access is unavailable.\n\nRequires macOS 14 or later. Includes Apple Silicon and Intel binaries."
+    }
+  },
+  {
     "version": "0.4.9",
     "filename": "ReDraw-0.4.9-11-universal.dmg",
     "github": {

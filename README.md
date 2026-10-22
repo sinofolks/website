@@ -2,6 +2,8 @@
 
 Public website source and release distribution for [ReDraw](https://www.sinofolks.com/redraw/), a native Mac drawing app.
 
+The current product copy describes one **MCP + Library + Animate Lifetime** license: existing valid MCP + Library keys also unlock Animate without another purchase or price change. Basic drawing, document saving, personal My Library, bundled Library browsing and static PNG/PDF export stay free. Animate preview, timing edits and MP4/GIF export join MCP and bundled Library insertion in the same paid entitlement. The existing US$9.99 price, 3-Mac limit, product IDs and checkout gates remain unchanged.
+
 The website runs on the existing Cloudflare Worker route. Installers are distributed through [GitHub Releases](https://github.com/sinofolks/website/releases). No R2 subscription or bucket is required. This repository contains website code and public media; the native application's source is maintained separately.
 
 ## Local development

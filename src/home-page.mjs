@@ -12,8 +12,8 @@ export function homePage({ locale, content, release, checkoutURL, sitePath, href
     'Yes. Download the signed, Apple-notarized DMG, open it, and drag ReDraw to Applications. The core canvas is free.',
     '可以。下载经签名并通过 Apple 公证的 DMG，打开后将 ReDraw 拖入 Applications。基础画板免费。');
   c.faq.items[1].answer = say(
-    'Draw, edit, save, and export PNG or PDF. LaTeX, Mermaid, and your personal My Library are included. Browsing the bundled Library is free; inserting its content and enabling MCP require the optional license.',
-    '绘制、编辑、保存，以及 PNG/PDF 导出免费，LaTeX、Mermaid 和个人 My Library 也包含在内。浏览内置 Library 免费；插入内置素材与开启 MCP 需要可选许可证。');
+    'Draw, edit, save, and make static PNG/PDF exports. LaTeX, Mermaid, and your personal My Library are included. Bundled Library browsing is free. One optional license unlocks bundled insertion, MCP, and Animate preview, timing edits, and MP4/GIF export.',
+    '绘制、编辑、保存与 PNG/PDF 静态导出免费，LaTeX、Mermaid 和个人 My Library 也包含在内。浏览内置 Library 免费。同一份可选许可证解锁内置素材插入、MCP，以及 Animate 预览、时间编辑和 MP4/GIF 导出。');
   c.pricing.plans[0].features = [
     say('Shapes, freehand drawing, text, and images', '图形、自由绘制、文字与图片'),
     say('LaTeX formulas and Mermaid diagrams', 'LaTeX 公式与 Mermaid 图表'),
@@ -64,7 +64,7 @@ export function homePage({ locale, content, release, checkoutURL, sitePath, href
     </section>
 
     <section class="extension-section" aria-labelledby="extension-title">
-      <div class="extension-copy"><p class="eyebrow">${say('Go a little further', '再往前一步')}</p><h2 id="extension-title">${say('A head start.<br>A new connection.', '从模板开始，<br>用连接拓展。')}</h2><p>${say('Start from the bundled Library, or connect a compatible AI client to your canvas through the local MCP server.', '从内置 Library 选一个起点，或通过本地 MCP 服务，将兼容的 AI 客户端连接到画布。')}</p><a class="text-link" href="#pricing">${say('Explore MCP + Library', '了解 MCP + Library')}${icon('arrow-right')}</a></div>
+      <div class="extension-copy"><p class="eyebrow">${say('Go a little further', '再往前一步')}</p><h2 id="extension-title">${say('A head start.<br>A new connection.', '从模板开始，<br>用连接拓展。')}</h2><p>${say('Start from the bundled Library, connect an AI client through MCP, or animate a workflow and export MP4/GIF. All three share one lifetime license.', '从内置 Library 选一个起点，通过 MCP 连接 AI 客户端，或制作工作流动画并导出 MP4/GIF。三项功能使用同一份买断许可证。')}</p><a class="text-link" href="#pricing">${say('Explore the lifetime license', '了解买断许可证')}${icon('arrow-right')}</a></div>
       <figure class="template-capture"><img src="${asset('mind-map.png')}" width="512" height="288" loading="lazy" alt="${say('ReDraw bundled mind-map template.', 'ReDraw 内置思维导图模板。')}"><figcaption>${say('A template from the bundled Library. Inserting bundled content requires a license.', '内置 Library 的思维导图模板。插入内置素材需要许可证。')}</figcaption></figure>
     </section>
 

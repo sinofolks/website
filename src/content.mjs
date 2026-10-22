@@ -6,7 +6,7 @@ export const content = {
     language: "English",
     meta: {
       title: "ReDraw — Clear diagrams. Made on your Mac.",
-      description: "A native Mac canvas for sketches, LaTeX formulas, and Mermaid diagrams. Draw, save, and export for free. Optional MCP + Library license.",
+      description: "A native Mac canvas with free drawing, saving, and PNG/PDF export. One lifetime license unlocks MCP, bundled Library insertion, and Animate.",
     },
     nav: { features: "The canvas", pricing: "Pricing", support: "Support", privacy: "Privacy", language: "中文" },
     hero: {
@@ -36,7 +36,7 @@ export const content = {
           eyebrow: "A place to start",
           title: "Borrow a little structure.",
           body: "Browse templates for flowcharts, mind maps, project planning, and more. Add reusable elements, emoji, and icons when the drawing needs a little extra context.",
-          detail: "Browsing and previews are free. Inserting bundled Library content requires the MCP + Library license.",
+          detail: "Browsing and previews are free. Inserting bundled Library content uses the same lifetime license as MCP and Animate.",
         },
         {
           id: "mcp",
@@ -57,7 +57,7 @@ export const content = {
     pricing: {
       eyebrow: "Simple choices",
       title: "Start free. Add what fits.",
-      intro: "One purchase unlocks MCP and the bundled Library. No ReDraw subscription.",
+      intro: "One purchase unlocks MCP, bundled Library insertion, and Animate. No ReDraw subscription.",
       note: "Planned direct-download price: US$9.99, plus applicable taxes. The final total is shown at checkout. Public downloads and purchases are not open yet.",
       plans: [
         {
@@ -70,24 +70,24 @@ export const content = {
         },
         {
           id: "lifetime",
-          name: "MCP + Library Lifetime",
+          name: "MCP + Library + Animate Lifetime",
           price: "$9.99",
           period: "USD · One-time purchase · Plus applicable taxes",
-          description: "More ways to start. More ways to build.",
-          features: ["Insert bundled templates, elements, emoji, and icons", "Enable the local MCP server", "Read and edit the canvas with a compatible AI client", "One license unlocks both features on up to 3 Macs"],
+          description: "Connect, reuse, and animate with one license.",
+          features: ["Insert bundled templates, elements, emoji, and icons", "Enable MCP for a compatible AI client", "Animate preview, timing edits, and MP4 / GIF export", "One license unlocks all three on up to 3 Macs"],
         },
       ],
-      finePrint: "The license covers MCP and the bundled Library collection. AI subscriptions, model usage, and credits are not included. Future separately sold packs are not promised.",
+      finePrint: "Existing valid MCP + Library keys also unlock Animate at no extra charge. The US$9.99 license price is unchanged; no separate Animate purchase is required. AI subscriptions, model usage, and credits are not included. Future separately sold packs are not promised.",
     },
     faq: {
       title: "A few things to know",
       items: [
         { question: "Can I download ReDraw now?", answer: "ReDraw is preparing a signed, Apple-notarized Mac download from this website. A public installer is not available yet. The free canvas will not require a purchase." },
-        { question: "What can I do for free?", answer: "Draw, edit, open and save documents, and export PNG or PDF. You can also browse and preview the Library. Optional purchases unlock inserting Library content and enabling MCP." },
-        { question: "Are MCP and Library separate purchases?", answer: "No. The direct-download edition uses one US$9.99 lifetime license for both MCP and the bundled Library, plus applicable taxes. The license supports up to 3 Macs. The core canvas remains free." },
+        { question: "What can I do for free?", answer: "Draw, edit, open and save documents, and make static exports such as PNG or PDF. You can also browse and preview the bundled Library. One optional license unlocks MCP, bundled Library insertion, and Animate preview, timing edits, and MP4/GIF export." },
+        { question: "Are MCP, Library, and Animate separate purchases?", answer: "No. All three use the same US$9.99 lifetime license, plus applicable taxes, on up to 3 Macs. Existing valid MCP + Library keys also unlock Animate in ReDraw 0.4.10 at no extra charge. There is no additional license or price increase. The core canvas and static PNG/PDF export remain free." },
         { question: "Does MCP include an AI model?", answer: "No. MCP connects a compatible client that you choose and configure. The client’s subscription, model usage, and credits are separate from ReDraw." },
         { question: "Where are my drawings stored?", answer: "On your Mac or in the location you choose when saving. ReDraw does not provide its own cloud document service. If that location is synchronized by iCloud Drive or another service, that provider handles the synchronization." },
-        { question: "Can I keep editing Library artwork?", answer: "Yes. Artwork already on your canvas remains editable and exportable even if Library access changes. The unlock is required for inserting additional bundled Library content." },
+        { question: "Can I keep editing Library artwork?", answer: "Yes. Artwork already on your canvas remains editable, saveable, and available for static PNG/PDF export even if license access changes. Inserting more bundled Library content and using Animate preview, timing edits, or MP4/GIF export require the lifetime license." },
       ],
     },
     support: {
@@ -102,11 +102,11 @@ export const content = {
       faq: [
         { question: "How do I save an editable drawing?", answer: "Choose File → Save to create a .rd document. ReDraw can open compatible .excalidraw and .json files; saving an import prompts for a new .rd document. Keep the editable source alongside your exports." },
         { question: "Can I recover interrupted work?", answer: "Try File → Recover Auto-Save. Recovery copies are separate from your saved document and are not a replacement for regular saves or backups." },
-        { question: "How do I activate MCP and Library?", answer: "Drawing, saving, and export do not require a license. MCP and the bundled Library use a license key. If you have a license key from a completed purchase, open ReDraw → License…, paste the key, and choose Activate license. Use Refresh license to recheck access, or Deactivate this Mac before moving an activation. Keep the key private. Public purchases are not open yet." },
+        { question: "How do I activate MCP, Library, and Animate?", answer: "Drawing, saving, and static PNG/PDF export do not require a license. MCP, bundled Library insertion, and Animate preview, timing edits, and MP4/GIF export share one lifetime license. Existing valid keys unlock all three without another purchase. Open ReDraw → License…, paste your key, and choose Activate license. Use Refresh license to recheck access, or Deactivate this Mac before moving an activation. Keep the key private. Public purchases are not open yet." },
         { question: "How many Macs can I activate?", answer: "One license supports up to 3 Macs at a time. On a Mac you no longer use, open ReDraw → License… and choose Deactivate this Mac while connected to the internet. If that Mac is unavailable, email support with your order reference and the installation ID when available; do not send your full license key." },
-        { question: "Can I use paid features offline?", answer: "Activate online first. After a successful license validation, MCP and Library can work offline for up to 30 days. Reconnect and choose Refresh license before that period ends. A revoked or deactivated license, or verification that requires an online check, does not receive offline access. Drawing, saving, and export stay free." },
+        { question: "Can I use paid features offline?", answer: "Activate online first. After a successful license validation, MCP, bundled Library insertion, and Animate can work offline for up to 30 days. Reconnect and choose Refresh license before that period ends. A revoked or deactivated license, or verification that requires an online check, does not receive offline access. Drawing, saving, and static PNG/PDF export stay free." },
         { question: "What if an activation result could not be confirmed?", answer: "If ReDraw asks you to retry after reconnecting, use Activate license again. If it shows an interrupted activation instead, email sinofolks@gmail.com with the installation ID shown in ReDraw and your order reference, not your full key. Support can identify its activation ID. In License…, choose Recover activation…, paste the ID supplied by support, and choose Release activation. Once release succeeds, enter your license key and activate again. If support cannot find an activation ID, Retry activation… offers a manual retry: read the warning and choose Retry activation to send the securely saved key once more. A retry may occupy an extra activation slot if the first request succeeded; the 3-Mac limit still applies. It never unlocks features without a successful license check. Do not guess activation IDs or repeatedly retry." },
-        { question: "Will my TestFlight purchase transfer?", answer: "TestFlight uses Apple’s test purchase environment. Those test entitlements are not paid licenses for the direct-download edition. Keep your .rd documents; drawing, saving, and export remain free." },
+        { question: "Will my TestFlight purchase transfer?", answer: "TestFlight uses Apple’s test purchase environment. Those test entitlements are not paid licenses for the direct-download edition. Keep your .rd documents; drawing, saving, and static PNG/PDF export remain free." },
         { question: "How do I connect an MCP client?", answer: "With MCP unlocked, open MCP Server… and enable the server. When it shows Running, use Copy Codex Configuration and add the configuration to the compatible client’s local settings. Keep ReDraw open. The server starts off each time you launch the app." },
         { question: "How do I stop an MCP connection?", answer: "Turn off Enable MCP Server, close the active canvas, or quit ReDraw. Closing only the MCP settings panel does not stop the server. A connected client can read and edit the active canvas and may send content to its provider; turning off access does not remove copies already held by that provider." },
         { question: "Where are the keyboard shortcuts?", answer: "Open Help → Keyboard Shortcuts in ReDraw for the current reference." },
@@ -179,7 +179,7 @@ export const content = {
     language: "简体中文",
     meta: {
       title: "ReDraw — 把思路画清楚。在你的 Mac 上。",
-      description: "为 Mac 打造的原生画板，用草图和连线图整理想法。绘制、保存与导出免费，可按需一次性解锁 Library 和 MCP。",
+      description: "为 Mac 打造的原生画板。绘制、保存与 PNG/PDF 静态导出免费，同一份买断许可证解锁 MCP、内置 Library 插入与 Animate。",
     },
     nav: { features: "画板", pricing: "价格", support: "支持", privacy: "隐私", language: "English" },
     hero: {
@@ -209,7 +209,7 @@ export const content = {
           eyebrow: "给开始一点帮助",
           title: "借一个结构，接着画。",
           body: "浏览流程图、思维导图、项目规划等模板。需要补充表达时，再添一些可复用元素、emoji 和图标。",
-          detail: "浏览和预览免费；插入内置素材需要 MCP + Library 许可证。",
+          detail: "浏览和预览免费；插入内置素材与 MCP、Animate 使用同一份买断许可证。",
         },
         {
           id: "mcp",
@@ -230,7 +230,7 @@ export const content = {
     pricing: {
       eyebrow: "按自己的需要选择",
       title: "免费开始，按需解锁。",
-      intro: "一次购买解锁 MCP 与内置 Library，无需 ReDraw 订阅。",
+      intro: "一次购买解锁 MCP、内置 Library 插入与 Animate，无需 ReDraw 订阅。",
       note: "官网版计划售价为 9.99 美元，适用税额另计，最终金额以结账页为准。目前尚未开放公开下载与购买。",
       plans: [
         {
@@ -243,24 +243,24 @@ export const content = {
         },
         {
           id: "lifetime",
-          name: "MCP + Library Lifetime",
+          name: "MCP + Library + Animate Lifetime",
           price: "$9.99",
           period: "美元 · 一次性买断 · 适用税额另计",
-          description: "从模板开始，用 AI 继续构建。",
-          features: ["插入内置模板、元素、emoji 和图标", "开启本地 MCP 服务", "通过兼容 AI 客户端读写画布", "同一份许可证解锁两项功能，最多激活 3 台 Mac"],
+          description: "连接、复用与动画，同一份许可证。",
+          features: ["插入内置模板、元素、emoji 和图标", "开启 MCP，连接兼容的 AI 客户端", "Animate 预览、时间编辑与 MP4 / GIF 导出", "同一份许可证解锁三项功能，最多激活 3 台 Mac"],
         },
       ],
-      finePrint: "许可证包含 MCP 与随应用提供的内置 Library。不包含 AI 订阅、模型用量或积分，也不承诺包含未来单独销售的素材包。",
+      finePrint: "现有有效 MCP + Library 密钥也可解锁 Animate，无需额外付费。许可证仍为 9.99 美元，Animate 无需单独购买。不包含 AI 订阅、模型用量或积分，也不承诺包含未来单独销售的素材包。",
     },
     faq: {
       title: "你可能想知道",
       items: [
         { question: "现在可以下载 ReDraw 吗？", answer: "ReDraw 正在准备经签名并通过 Apple 公证的官网 Mac 安装包，暂未开放公开下载。基础画板无需购买。" },
-        { question: "免费版本可以做什么？", answer: "可以绘制、编辑、打开和保存文档，以及导出 PNG 或 PDF，也可以浏览和预览 Library。插入 Library 素材与开启 MCP 服务属于可选的付费解锁功能。" },
-        { question: "MCP 与 Library 分别收费吗？", answer: "官网版使用同一份 9.99 美元买断许可证解锁 MCP 和内置 Library，适用税额另计。一份许可证最多激活 3 台 Mac，基础画板仍然免费。" },
+        { question: "免费版本可以做什么？", answer: "可以绘制、编辑、打开和保存文档，以及进行 PNG 或 PDF 等静态导出，也可以浏览和预览内置 Library。同一份可选许可证解锁 MCP、内置 Library 插入，以及 Animate 预览、时间编辑和 MP4/GIF 导出。" },
+        { question: "MCP、Library 与 Animate 分别收费吗？", answer: "三项功能使用同一份 9.99 美元买断许可证，适用税额另计，最多激活 3 台 Mac。现有有效 MCP + Library 密钥也可解锁 ReDraw 0.4.10 的 Animate，无需额外付费，不增加许可证或涨价。基础画板与 PNG/PDF 静态导出仍然免费。" },
         { question: "MCP 包含 AI 模型吗？", answer: "不包含。MCP 用于连接你选择并配置的兼容客户端。客户端订阅、模型用量和积分与 ReDraw 分开。" },
         { question: "图会保存在哪里？", answer: "保存在你的 Mac，或保存时选择的位置。ReDraw 不提供自己的云文档服务。如果选择了 iCloud Drive 或其他同步目录，同步由相应服务商处理。" },
-        { question: "Library 的内容以后还能编辑吗？", answer: "可以。已放入画布的内容仍可编辑和导出，即使 Library 权限发生变化。继续插入新的内置素材需要相应解锁权限。" },
+        { question: "Library 的内容以后还能编辑吗？", answer: "可以。即使许可证权限发生变化，已放入画布的内容仍可编辑、保存及导出为 PNG/PDF 静态文件。继续插入内置素材，以及使用 Animate 预览、时间编辑或 MP4/GIF 导出，需要买断许可证。" },
       ],
     },
     support: {
@@ -275,11 +275,11 @@ export const content = {
       faq: [
         { question: "如何保存为可以继续编辑的文档？", answer: "选择 File → Save，保存为 .rd 文档。ReDraw 可以打开兼容的 .excalidraw 和 .json 文件；保存导入内容时，会提示创建新的 .rd 文档。导出图片后，也请保留可编辑源文件。" },
         { question: "工作中断后能找回内容吗？", answer: "可以尝试 File → Recover Auto-Save。恢复副本与正式保存的文档分开，不能替代定期保存和备份。" },
-        { question: "如何激活 MCP 与 Library？", answer: "绘制、保存与导出无需许可证。MCP 与内置 Library 通过许可证密钥解锁。如果你已有完成购买后获得的密钥，打开 ReDraw → License…，输入密钥并选择 Activate license。Refresh license 用于重新验证权限；转移激活时可先选择 Deactivate this Mac。请妥善保管，不要公开分享。目前尚未开放公开购买。" },
+        { question: "如何激活 MCP、Library 与 Animate？", answer: "绘制、保存与 PNG/PDF 静态导出无需许可证。MCP、内置 Library 插入，以及 Animate 预览、时间编辑和 MP4/GIF 导出使用同一份买断许可证。现有有效密钥可解锁三项功能，无需再次购买。打开 ReDraw → License…，输入密钥并选择 Activate license。Refresh license 用于重新验证权限；转移激活时可先选择 Deactivate this Mac。请妥善保管，不要公开分享。目前尚未开放公开购买。" },
         { question: "一份许可证可以激活几台 Mac？", answer: "同一时间最多激活 3 台 Mac。在不再使用的 Mac 上联网打开 ReDraw → License…，选择 Deactivate this Mac。如果无法再使用该 Mac，可向支持邮箱提供订单编号及可获得的 installation ID，请勿发送完整许可证密钥。" },
-        { question: "付费功能可以离线使用吗？", answer: "首次激活需要联网。许可证成功验证后，MCP 与 Library 最多可离线使用 30 天；请在期限结束前联网并选择 Refresh license。已撤销、已取消激活或验证状态要求联网核验的许可证不提供离线权限。绘制、保存和导出始终免费。" },
+        { question: "付费功能可以离线使用吗？", answer: "首次激活需要联网。许可证成功验证后，MCP、内置 Library 插入与 Animate 最多可离线使用 30 天；请在期限结束前联网并选择 Refresh license。已撤销、已取消激活或验证状态要求联网核验的许可证不提供离线权限。绘制、保存与 PNG/PDF 静态导出始终免费。" },
         { question: "提示无法确认激活结果怎么办？", answer: "如果应用提示重新联网后重试，请再次选择 Activate license。如果提示激活中断，请将应用显示的 installation ID 与订单编号发送至 sinofolks@gmail.com，不要发送完整密钥。支持人员查明 activation ID 后，在 License… 中选择 Recover activation…，粘贴该 ID 并选择 Release activation。释放成功后再输入许可证密钥激活。如果支持人员无法查到 activation ID，可选择 Retry activation…，阅读风险提示，再选择 Retry activation，使用安全保存的密钥发起一次人工重试。如果首次请求实际成功，重试可能额外占用激活名额，3 台 Mac 上限仍然适用；只有许可证验证成功才会解锁。请勿猜测 ID 或反复重试。" },
-        { question: "TestFlight 的购买会转移吗？", answer: "TestFlight 使用 Apple 的测试购买环境，其中的测试权益不等于官网版付费许可证。请保留 .rd 文档；绘制、保存与导出仍然免费。" },
+        { question: "TestFlight 的购买会转移吗？", answer: "TestFlight 使用 Apple 的测试购买环境，其中的测试权益不等于官网版付费许可证。请保留 .rd 文档；绘制、保存与 PNG/PDF 静态导出仍然免费。" },
         { question: "如何连接 MCP 客户端？", answer: "解锁 MCP 后，打开 MCP Server… 并开启服务。显示 Running 后，使用 Copy Codex Configuration，将配置加入兼容客户端的本地设置。使用时需保持 ReDraw 开启；服务在每次启动应用时默认关闭。" },
         { question: "如何停止 MCP 连接？", answer: "关闭 Enable MCP Server、关闭当前画布，或退出 ReDraw。只关闭 MCP 设置面板不会停止服务。连接的客户端可以读写当前画布，并可能向其服务商发送内容；停止访问不会删除服务商已持有的副本。" },
         { question: "在哪里查看快捷键？", answer: "在 ReDraw 中打开 Help → Keyboard Shortcuts，查看当前快捷键列表。" },
